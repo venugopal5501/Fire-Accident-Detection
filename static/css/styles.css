@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('/static/css/js/1624.jpg'); /* Replace 'background-image.jpg' with your actual image file name and path */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+  width: calc(100% - 20px); /* Subtract 20px for padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px; 
+  margin-left: 10px;/* Adjust the margin-bottom as needed */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}

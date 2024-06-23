@@ -1,0 +1,117 @@
+body {
+    background-image: none;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+    overflow: hidden;
+   }
+   
+   .carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+   }
+   
+   .carousel-item.active {
+    opacity: 1;
+   }
+
+   .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area without distorting its aspect ratio */
+   }
+
+   #accident-detection-button {
+    position: fixed; /* or 'absolute' if you want the button to be positioned relative to the nearest positioned ancestor */
+    bottom: 20px; /* Adjust as needed to position the button above the bottom edge of the page */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjusts the button's position based on its own width */
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+   
+   .glow-text {
+    color: #ffe600; /* Changed text color to red */
+    text-align: center;
+    font-size: 40px; /* Adjusted text size */
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000; /* Adjusted shadow color to match text color */
+    margin-bottom: 20px; /* Added gap between text and button */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the text's position based on its own dimensions */
+    color: #ffe600; /* Adjust the text color as needed */
+    text-align: bottom;
+    margin-bottom: 20px;
+    font-size: 40px; /* Adjust the font size as needed */
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000; /* Adjust the shadow color and blur as needed */
+   }
+   
+   .carousel-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; /* Example color, adjust as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+
+   .app-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; /* Adjust as needed */
+    background-color: rgba(51, 51, 51, 0.5); /* Transparent background */
+    z-index: 100; /* Ensures the app bar is above other content */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff; /* Example color, adjust as needed */
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    height: 100%; /* Ensure the link takes up the full height of the app bar */
+}
+.nav-bar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.tech-stacks {
+    margin-right: 50px; /* Adjust the space as needed */
+}
+
+
+
+
+.app-bar-text {
+    position: absolute;
+    left: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff; /* Adjust text color as needed */
+    font-size: 25px; /* Adjust text size as needed */
+}
