@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Corrected the path to use forward slashes -->
+</head>
+<body>
+    <link rel="stylesheet" href="static\css\styles.css">
+    <div class="container">
+        <h2>Login</h2>
+        <!-- Added name attributes to the input fields for form submission -->
+        <form id="loginForm" method="POST" action="/login">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <input type="submit" value="Login">
+            <div class="error-message" id="errorMessage"></div>
+        </form>
+    </div>
+    <!-- Corrected the path to use forward slashes -->
+    <script src="templates/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="\static\css\home-styles.css">
+<script src="/static/css/carousel.js"></script>
+</head>
+<body>
+   <div class="app-bar">
+      <div class="app-bar-text">Incident Detection System</div>
+      <ul class="nav-bar">
+         <a href="/home" class="nav-link">Home</a>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <a href="/detection" class="nav-link">Detection</a>
+          <li><a href="/tech" class="nav-link">Tech Stacks</a></li>
+          <li><a href="/log" class="nav-link">Logout</a><li>
+      </ul>
+  </div>
+</div>
+  <div class="carousel">
+    <div class="carousel-item active">
+       <img src="/static/css/crime.png" alt="Image 1">
+    </div>
+    <div class="carousel-item">
+       <img src="/static/css/fire.jpg" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+       <img src="/static/css/car.jpg" alt="Image 3">
+    </div>
+   </div>
+   <div class="button-container">
+    <div class="glow-text">Incident Detection System</div>
+    <div class="button-box">
+
+      <button class="section-button" id="accident-detection-button" onclick="navigateToDetection()">Get Started</button>
+      <script>
+         function navigateToDetection() {
+             window.location.href = '/detection';
+         }
+         </script>
+  </div>
+    <div id="anotherSection">
+      
+      
+  </div>
+   </div>
+   <script src="carousel.js"></script>
+</body>
+</html>

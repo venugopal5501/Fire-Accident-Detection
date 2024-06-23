@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/static/fire.jpg'); /* Ensure the path is correct */
+            background-size: cover; /* This makes the background image cover the entire body */
+            background-position: center; /* This centers the background image */
+            transition: background-image 2s ease-in-out;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 32px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 10px auto;
+        }
+
+        .app-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; /* Adjust as needed */
+    background-color: rgba(51, 51, 51, 0.5); /* Transparent background */
+    z-index: 100; /* Ensures the app bar is above other content */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff; /* Example color, adjust as needed */
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    height: 100%; /* Ensure the link takes up the full height of the app bar */
+}
+.nav-bar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.tech-stacks {
+    margin-right: 50px; /* Adjust the space as needed */
+}
+
+
+
+
+.app-bar-text {
+    position: absolute;
+    left: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff; /* Adjust text color as needed */
+    font-size: 25px; /* Adjust text size as needed */
+}
+
+        input[type="submit"] {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-bar">
+        <div class="app-bar-text">Explosion Detection System</div>
+        <ul class="nav-bar">
+           <a href="/home" class="nav-link">Home</a>
+            <li><a href="" class="nav-link">About</a></li>
+            <a href="/detection" class="nav-link">Detection</a>
+            <li><a href="detection.html" class="nav-link">Tech Stacks</a></li>
+            <li><a href="/log" class="nav-link">Logout</a><li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Upload Video</h1>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file" accept="video/*">
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+
+    <script>
+        // Array of background images
+        const bgImages = ['asset\\image1.jpg', 'asset\\image2.jpg', 'asset\\image3.jpg'];
+        let currentIndex = 0;
+
+        // Function to change background image every 2 seconds
+        // setInterval(() => {
+        //     currentIndex = (currentIndex + 1) % bgImages.length;
+        //     document.body.style.backgroundImage = `url('${bgImages[currentIndex]}')`;
+        // }, 2000);
+    </script>
+</body>
+</html>

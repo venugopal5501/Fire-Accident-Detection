@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Stack</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #5f9ada;
+    }
+    
+   .app-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; /* Adjust as needed */
+    background-color: rgba(51, 51, 51, 0.5); /* Transparent background */
+    z-index: 100; /* Ensures the app bar is above other content */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff; /* Example color, adjust as needed */
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    height: 100%; /* Ensure the link takes up the full height of the app bar */
+}
+.nav-bar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.tech-stacks {
+    margin-right: 50px; /* Adjust the space as needed */
+}
+
+
+
+
+.app-bar-text {
+    position: absolute;
+    left: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff; /* Adjust text color as needed */
+    font-size: 25px; /* Adjust text size as needed */
+}
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #b39bdf;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .tech-stack {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .tech-item {
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center-align content within tech-item */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .tech-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: block; /* Ensure image takes up full width within tech-item */
+      margin: 0 auto; /* Center-align image horizontally */
+    }
+    .tech-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-top: auto;
+    }
+    .tech-description {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: auto; /* Align description at the bottom */
+    }
+
+   
+    .jupyter-item {
+      width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center-align content within jupyter-item */
+    }
+    .jupyter-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: block; /* Ensure image takes up full width within jupyter-item */
+      margin: 0 auto; /* Center-align image horizontally */
+    }
+    .jupyter-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-bar">
+    <div class="app-bar-text">Incident Detection System</div>
+    <ul class="nav-bar">
+       <a href="/home" class="nav-link">Home</a>
+        <li><a href="/about" class="nav-link">About</a></li>
+        <a href="/detection" class="nav-link">Detection</a>
+        <li><a href="/tech" class="nav-link">Tech Stacks</a></li>
+        <li><a href="/log" class="nav-link">Logout</a><li>
+    </ul>
+</div>
+  <div class="container">
+    <h1>Tech Stack Used in Our Project</h1>
+    <div class="tech-stack">
+      <div class="tech-item">
+        <img src="static/TensorFlow_logo.svg" alt="TensorFlow" width="150" height="150">
+        <div class="tech-title">TensorFlow & Keras</div>
+        <div class="tech-description">Deep learning frameworks for model building and training.</div>
+      </div>
+      <div class="tech-item">
+        <img src="static/OpenCV_Logo_with_text_svg_version (1).svg" alt="OpenCV" width="150" height="150">
+        <div class="tech-title">OpenCV</div>
+        <div class="tech-description">Computer vision library for image processing and analysis.</div>
+      </div>
+      <div class="tech-item">
+        <img src="static/NumPy_Matplotlib_sin_x_plotted_with_red_dots.svg" alt="NumPy" width="150" height="150">
+        <div class="tech-title">NumPy & Pandas</div>
+        <div class="tech-description">Libraries for numerical computing and data manipulation.</div>
+      </div>
+      <div class="tech-item">
+        <img src="static/Mpl_screenshot_figures_and_code.png" alt="Matplotlib" width="150" height="150">
+        <div class="tech-title">Matplotlib</div>
+        <div class="tech-description">Data visualization library for plotting charts and graphs.</div>
+      </div>
+      <div class="tech-item">
+        <img src="static\Twilio-logo-red.svg" alt="Twilio" width="150" height="150">
+        <div class="tech-title">Twilio</div>
+        <div class="tech-description">API for sending alert messages and notifications.</div>
+      </div>
+      <div class="tech-item">
+        <img src="static/Dall-e_3_(jan_'24)_artificial_intelligence_icon.png" alt="CNN" width="150" height="150">
+        <div class="tech-title">Convolutional Neural Network (CNN)</div>
+        <div class="tech-description">Deep learning model for image classification and analysis.</div>
+      </div>
+      <div class="tech-item">
+        <img src="static/Python-logo-notext.svg" alt="Python" width="150" height="150">
+        <div class="tech-title">Python</div>
+        <div class="tech-description">High-level programming language used for scripting and backend development.</div>
+      </div>
+      <div class="tech-item">
+        <img src="static/HTML5_logo_and_wordmark.svg" alt="HTML" width="150" height="150">
+        <div class="tech-title">HTML</div>
+        <div class="tech-description">Markup language for creating web pages and content structure.</div>
+      </div>
+      <div class="tech-item">
+        <img src="static/CSS3_logo_and_wordmark.svg" alt="CSS" width="150" height="150">
+        <div class="tech-title">CSS</div>
+        <div class="tech-description">Styling language for designing the appearance of web pages.</div>
+      </div>
+      <div class="tech-item">
+        <img src="static/Unofficial_JavaScript_logo_2.svg" alt="JavaScript" width="150" height="150">
+        <div class="tech-title">JavaScript</div>
+        <div class="tech-description">Programming language for client-side scripting and web interactivity.</div>
+      </div>
+      <div class="jupyter-item">
+        <img src="static/Jupyter_logo.svg" alt="Jupyter Notebook" width="150" height="150">
+        <div class="jupyter-title">Jupyter Notebook</div>
+        <div class="tech-description">Interactive computational notebook for data science and analysis.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
